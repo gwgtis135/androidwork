@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         switch (Rgroup1.getCheckedRadioButtonId()){
 
-            case R.id.RdoDog: imgPet.setImageResource(R.drawable.dog)
+            case R.id.RdoDog: imgPet.setImageResource(R.drawable.dog);
 
         }
 

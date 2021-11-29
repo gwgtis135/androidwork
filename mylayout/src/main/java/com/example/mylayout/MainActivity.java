@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
             //Toast.makeText(this, "클릭됨", Toast.LENGTH_LONG).show();
             //모든 버튼 글릭하면 이쪽으로 오게됨
 
-            if ()
-
+            //get번호로 찾아서 바꿔주기
+        if (View.linera)
             //클릭한 버튼의 text(숫자값)을 읽어서 startNum과 같다면
 
                     //startNum++
