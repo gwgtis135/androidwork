@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/dev/androidWorkSpace/myapplication/src/main/res/layout/activity_main.xml" value="0.21822916666666667" />
+        <entry key="..\:/dev/androidWorkSpace/app/src/main/res/layout/activity_main.xml" value="0.21822916666666667" />
+        <entry key="..\:/dev/androidWorkSpace/myapplication/src/main/res/drawable/ic_launcher_background.xml" value="0.2911458333333333" />
+        <entry key="..\:/dev/androidWorkSpace/myapplication/src/main/res/layout/active_calc.xml" value="0.33" />
+        <entry key="..\:/dev/androidWorkSpace/myapplication/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/dev/androidWorkSpace/mylayout/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/dev/androidWorkSpace/mypet/src/main/res/layout/activity_main.xml" value="0.2" />
       </map>
     </option>
   </component>

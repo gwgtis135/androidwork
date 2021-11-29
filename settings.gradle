@@ -9,3 +9,5 @@ dependencyResolutionManagement {
 rootProject.name = "My first"
 include ':app'
 include ':myapplication'
+include ':mypet'
+include ':mylayout'
