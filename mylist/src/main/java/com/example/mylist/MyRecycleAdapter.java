@@ -13,12 +13,14 @@ import java.util.Map;
 
 
 public class MyRecycleAdapter extends RecyclerView.Adapter<MyRecycleAdapter.MyHolder>  {
-    ArrayList<Map<String, String>> data;
+    ArrayList<MemberVO> data;
     public MyRecycleAdapter(){}
-    public MyRecycleAdapter(ArrayList<Map<String, String>> data){
+    public MyRecycleAdapter(ArrayList<MemberVO> data){
         this.data = data;
     }
+    //public void  setData(ArrayList<MemberVO>)
 
+    //view에 클릭 이벤트를 건다.
     @NonNull
     @Override
     public MyHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -29,11 +31,12 @@ public class MyRecycleAdapter extends RecyclerView.Adapter<MyRecycleAdapter.MyHo
         return vh;
     }
 
+    //바인딩 하는 부분
     //매칭할 때 홀더로부터 꺼내쓰면 된다. myHolder
     @Override
     public void onBindViewHolder(@NonNull MyHolder holder, int position) {
-        holder.txtName.setText(data.get(position).get("name"));
-        holder.txtAddr.setText(data.get(position).get("addr"));
+        holder.txtName.setText(data.get(position).getTitle());
+        holder.txtAddr.setText(data.get(position).getContent());
     }
 
     @Override
