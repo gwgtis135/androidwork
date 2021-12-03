@@ -1,14 +1,14 @@
 package com.example.mydiary;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
@@ -41,13 +41,18 @@ public class MainActivity extends AppCompatActivity {
                         String id = list.get(i).getId();
                         String text = list.get(i).getText();
                         String content = list.get(i).getContent();
+                        String img = list.get(i).getImg();
 
-                        System.out.println(text);
-                        System.out.println(content);
+
+
 
                         intent.putExtra("id",id);
                         intent.putExtra("text",text);
                         intent.putExtra("content",content);
+                        intent.putExtra("img", img);
+
+
+
                         startActivity(intent);
 
                         ((MyAdapter)lv.getAdapter()).setData(DiaryDAO.selectAll(dbhelper));

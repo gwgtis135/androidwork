@@ -1,17 +1,19 @@
 package com.example.mydiary;
 
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
-import java.util.Map;
 
 public class MyAdapter extends BaseAdapter {
+
+
+
 
     //어떤 데이터랑 맵핑 할것인지 정해준다.
     ArrayList<DiaryVO> data;    // map에 arrayList를 담아서 사용
@@ -39,9 +41,17 @@ public class MyAdapter extends BaseAdapter {
         TextView txtTime = view.findViewById(R.id.txtTime);
         TextView txtTitle = view.findViewById(R.id.txtTitle);
         TextView txtContent = view.findViewById(R.id.txtContent);
+        ImageView imageView = view.findViewById(R.id.imageView);
+
+
         txtTime.setText(data.get(i).getTime());
         txtTitle.setText(data.get(i).getId());
         txtContent.setText(data.get(i).getContent());
+
+        if(data.get(i).getImg() != null){
+            Uri photoURI = Uri.parse(data.get(i).getImg());
+            imageView.setImageURI(photoURI);
+        }
 
         return view;
     }
